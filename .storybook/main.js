@@ -7,6 +7,9 @@ module.exports = {
     const svelteLoader = config.module.rules.find(r => r.loader?.includes("svelte-loader"));
     svelteLoader.options.preprocess = sveltePreprocess({
       typescript: { transpileOnly: true },
+      postcss: {
+        plugins: [require("autoprefixer")],
+      },
     });
     return config;
   },
