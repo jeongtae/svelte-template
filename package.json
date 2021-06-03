@@ -8,7 +8,7 @@
     "clean": "rimraf dist storybook-static",
     "test": "jest --watchAll",
     "lint": "eslint './src/**/*.{js,ts,svelte}'",
-    "format": "prettier \"src/\" \"public/\" --write --ignore-path ./.prettierignore",
+    "format": "prettier 'src' 'public' --write --ignore-path '.prettierignore'",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
     "public:dev": "gulp watchPublic",
