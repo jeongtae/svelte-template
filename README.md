@@ -38,3 +38,7 @@ npm run dev
 ```
 
 Navigate to [localhost:5000](http://localhost:5000). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
+
+## Precaution
+
+Be aware the stylesheets in the `public` directory and the styles imported by `import "*.css"` statement are not will be transpiled with PostCSS and Sass.
