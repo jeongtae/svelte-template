@@ -1,0 +1,5 @@
+dist/
+storybook-static/
+gulpfile.*
+.eslintrc.js
+*.config.js

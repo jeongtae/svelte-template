@@ -3,6 +3,9 @@
   "include": ["src/**/*"],
   "exclude": ["node_modules/*", "__sapper__/*", "public/*", "dist/*"],
   "compilerOptions": {
-    "types": ["svelte", "jest"]
+    "types": ["svelte", "jest"],
+    "lib": ["DOM", "ES2020", "WebWorker"],
+    "resolveJsonModule": true,
+    "strict": true
   }
 }
