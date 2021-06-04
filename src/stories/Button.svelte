@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import "./button.css";
   import { createEventDispatcher } from "svelte";
   /**
@@ -9,7 +9,7 @@
   /**
    * What background color to use
    */
-  export let backgroundColor;
+  export let backgroundColor: string;
   /**
    * How large should the button be?
    */
@@ -28,7 +28,7 @@
   /**
    * Optional click handler
    */
-  function onClick(event) {
+  function onClick(event: MouseEvent) {
     dispatch("click", event);
   }
 </script>
