@@ -21,6 +21,12 @@ module.exports = {
     {
       files: ["*.svelte"],
       processor: "svelte3/svelte3",
+      rules: {
+        // Uncomment the line below if you want to solve some type-aware problems
+        // related with reactive assignments and store subscriptions
+        // https://github.com/sveltejs/eslint-plugin-svelte3#installation-with-typescript
+        // "@typescript-eslint/no-unsafe-member-access": "off",
+      },
     },
     {
       files: ["*.stories.{js,ts}"],
