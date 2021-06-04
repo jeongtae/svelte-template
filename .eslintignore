@@ -1,5 +1,6 @@
 dist/
 storybook-static/
+public/
 gulpfile.*
 .eslintrc.js
 *.config.js
